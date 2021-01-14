@@ -42,13 +42,13 @@ class _MyAppState extends State<MyApp> {
   }
 
   /// SHARE ON FACEBOOK CALL
-  shareOnFacebook() async {
-    String result = await FlutterSocialContentShare.share(
-        type: ShareType.facebookWithoutImage,
-        url: "https://www.apple.com",
-        quote: "captions");
-    print(result);
-  }
+  // shareOnFacebook() async {
+  //   String result = await FlutterSocialContentShare.share(
+  //       type: ShareType.facebookWithoutImage,
+  //       url: "https://www.apple.com",
+  //       quote: "captions");
+  //   print(result);
+  // }
 
   /// SHARE ON INSTAGRAM CALL
   shareOnInstagram() async {
@@ -94,13 +94,13 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: <Widget>[
             Text('Running on: $_platformVersion\n'),
-            RaisedButton(
-              child: Text("Share to facebook button"),
-              color: Colors.red,
-              onPressed: () {
-                shareOnFacebook();
-              },
-            ),
+            // RaisedButton(
+            //   child: Text("Share to facebook button"),
+            //   color: Colors.red,
+            //   onPressed: () {
+            //     shareOnFacebook();
+            //   },
+            // ),
             RaisedButton(
               child: Text("Share to instagram button"),
               color: Colors.red,
